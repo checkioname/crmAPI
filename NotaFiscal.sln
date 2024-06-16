@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Driving", "1. Driving", "{98873BF3-15A3-4572-A239-AAFA8E9B4362}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "service.NotaFiscal.Driving.API", "1. Driving\service.NotaFiscal.Driving.API\service.NotaFiscal.Driving.API.csproj", "{01F9A944-608B-4421-95A0-3BF81C952740}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Core", "2. Core", "{20BE810F-C3EE-4D9E-ABD8-0373B8AB48E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "service.NotaFiscal.Core.Application", "2. Core\service.NotaFiscal.Core.Application\service.NotaFiscal.Core.Application.csproj", "{369777F6-E92C-4E16-8DA5-9249611DD7CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "service.NotaFiscal.Core.Domain", "2. Core\service.NotaFiscal.Core.Domain\service.NotaFiscal.Core.Domain.csproj", "{7CA4E116-4537-40D4-AF8E-C411FD9904D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Driven", "3. Driven", "{B96CBDDE-4DA8-489D-A1A3-857E4385C6BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "service.NotaFiscal.Driven.Adapter.Data", "3. Driven\service.NotaFiscal.Driven.Adapter.Data\service.NotaFiscal.Driven.Adapter.Data.csproj", "{F1568E10-C36F-49B5-B72F-4F7378DCE974}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Tests", "4. Tests", "{DEF3F410-AA6D-4EE6-9A54-075E4F63EF64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "service.NotaFiscal.Tests", "4. Tests\service.NotaFiscal.Tests\service.NotaFiscal.Tests.csproj", "{AF231A5D-1873-4D55-AA8F-C94BA62B8BE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01F9A944-608B-4421-95A0-3BF81C952740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01F9A944-608B-4421-95A0-3BF81C952740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01F9A944-608B-4421-95A0-3BF81C952740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01F9A944-608B-4421-95A0-3BF81C952740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{369777F6-E92C-4E16-8DA5-9249611DD7CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{369777F6-E92C-4E16-8DA5-9249611DD7CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{369777F6-E92C-4E16-8DA5-9249611DD7CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{369777F6-E92C-4E16-8DA5-9249611DD7CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CA4E116-4537-40D4-AF8E-C411FD9904D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CA4E116-4537-40D4-AF8E-C411FD9904D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CA4E116-4537-40D4-AF8E-C411FD9904D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CA4E116-4537-40D4-AF8E-C411FD9904D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1568E10-C36F-49B5-B72F-4F7378DCE974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1568E10-C36F-49B5-B72F-4F7378DCE974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1568E10-C36F-49B5-B72F-4F7378DCE974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1568E10-C36F-49B5-B72F-4F7378DCE974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF231A5D-1873-4D55-AA8F-C94BA62B8BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF231A5D-1873-4D55-AA8F-C94BA62B8BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF231A5D-1873-4D55-AA8F-C94BA62B8BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF231A5D-1873-4D55-AA8F-C94BA62B8BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{01F9A944-608B-4421-95A0-3BF81C952740} = {98873BF3-15A3-4572-A239-AAFA8E9B4362}
+		{369777F6-E92C-4E16-8DA5-9249611DD7CA} = {20BE810F-C3EE-4D9E-ABD8-0373B8AB48E8}
+		{7CA4E116-4537-40D4-AF8E-C411FD9904D1} = {20BE810F-C3EE-4D9E-ABD8-0373B8AB48E8}
+		{F1568E10-C36F-49B5-B72F-4F7378DCE974} = {B96CBDDE-4DA8-489D-A1A3-857E4385C6BE}
+		{AF231A5D-1873-4D55-AA8F-C94BA62B8BE6} = {DEF3F410-AA6D-4EE6-9A54-075E4F63EF64}
+	EndGlobalSection
+EndGlobal

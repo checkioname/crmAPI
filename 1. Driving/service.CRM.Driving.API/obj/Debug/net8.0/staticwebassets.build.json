@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "UcwIdV+xgCqDfhYs8fK+XTE9SZiR/nojEida6WOdm28=",
+  "Source": "service.CRM.Driving.API",
+  "BasePath": "_content/service.CRM.Driving.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "G9Y85k5/67qdlsC7YEXza0F9lVOEHFA8IvADPzhkmXR7Llz+DCRboAfDLYFBRhgwZrdUjXOLMBDWqUISSy36GQ==",
+  "success": true,
+  "projectFilePath": "/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Domain/service.CRM.Core.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/king/.nuget/packages/mongodb.bson/2.26.0/mongodb.bson.2.26.0.nupkg.sha512",
+    "/home/king/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/home/king/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

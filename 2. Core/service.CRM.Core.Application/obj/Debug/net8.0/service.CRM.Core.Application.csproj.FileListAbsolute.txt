@@ -1,0 +1,15 @@
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/bin/Debug/net8.0/service.CRM.Core.Application.deps.json
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/bin/Debug/net8.0/service.CRM.Core.Application.dll
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/bin/Debug/net8.0/service.CRM.Core.Application.pdb
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/bin/Debug/net8.0/service.CRM.Core.Domain.dll
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/bin/Debug/net8.0/service.CRM.Core.Domain.pdb
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/obj/Debug/net8.0/service.CRM.Core.Application.csproj.AssemblyReference.cache
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/obj/Debug/net8.0/service.CRM.Core.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/obj/Debug/net8.0/service.CRM.Core.Application.AssemblyInfoInputs.cache
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/obj/Debug/net8.0/service.CRM.Core.Application.AssemblyInfo.cs
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/obj/Debug/net8.0/service.CRM.Core.Application.csproj.CoreCompileInputs.cache
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/obj/Debug/net8.0/service..90AC5E05.Up2Date
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/obj/Debug/net8.0/service.CRM.Core.Application.dll
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/obj/Debug/net8.0/refint/service.CRM.Core.Application.dll
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/obj/Debug/net8.0/service.CRM.Core.Application.pdb
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/obj/Debug/net8.0/ref/service.CRM.Core.Application.dll

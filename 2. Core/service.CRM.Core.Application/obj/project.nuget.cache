@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "P9DGe1wgcyoXyu7lsMNNUGVTd56q+jmQ9cAWm2cBh4QL20nXka5VEwPLIyB80Y6bbuF6IpuIRgwIlInFjbFzsg==",
+  "success": true,
+  "projectFilePath": "/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/service.CRM.Core.Application.csproj",
+  "expectedPackageFiles": [
+    "/home/king/.nuget/packages/documentformat.openxml/3.0.2/documentformat.openxml.3.0.2.nupkg.sha512",
+    "/home/king/.nuget/packages/documentformat.openxml.framework/3.0.2/documentformat.openxml.framework.3.0.2.nupkg.sha512",
+    "/home/king/.nuget/packages/mongodb.bson/2.26.0/mongodb.bson.2.26.0.nupkg.sha512",
+    "/home/king/.nuget/packages/system.io.packaging/8.0.0/system.io.packaging.8.0.0.nupkg.sha512",
+    "/home/king/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/home/king/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -3,7 +3,6 @@
 /home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/bin/Debug/net8.0/service.CRM.Driven.Adapter.Data.pdb
 /home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
 /home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/bin/Debug/net8.0/service.CRM.Core.Domain.dll
-/home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
 /home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/bin/Debug/net8.0/service.CRM.Core.Domain.pdb
 /home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/obj/Debug/net8.0/service.CRM.Driven.Adapter.Data.csproj.AssemblyReference.cache
 /home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/obj/Debug/net8.0/service.CRM.Driven.Adapter.Data.GeneratedMSBuildEditorConfig.editorconfig
@@ -15,3 +14,4 @@
 /home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/obj/Debug/net8.0/refint/service.CRM.Driven.Adapter.Data.dll
 /home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/obj/Debug/net8.0/service.CRM.Driven.Adapter.Data.pdb
 /home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/obj/Debug/net8.0/ref/service.CRM.Driven.Adapter.Data.dll
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/obj/Debug/net8.0/service.CRM.Driven.Adapter.Data.sourcelink.json

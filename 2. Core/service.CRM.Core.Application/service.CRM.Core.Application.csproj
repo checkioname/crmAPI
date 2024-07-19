@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\3. Driven\service.CRM.Driven.Adapter.Data\service.CRM.Driven.Adapter.Data.csproj" />
     <ProjectReference Include="..\service.CRM.Core.Domain\service.CRM.Core.Domain.csproj" />
   </ItemGroup>
 
@@ -16,6 +17,7 @@
 
   <ItemGroup>
     <PackageReference Include="DocumentFormat.OpenXml" Version="3.0.2" />
+    <PackageReference Include="DocX" Version="3.0.0" />
   </ItemGroup>
 
 </Project>

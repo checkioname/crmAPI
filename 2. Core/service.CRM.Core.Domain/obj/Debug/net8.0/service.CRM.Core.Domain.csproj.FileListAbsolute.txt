@@ -10,3 +10,4 @@
 /home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Domain/obj/Debug/net8.0/service.CRM.Core.Domain.pdb
 /home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Domain/obj/Debug/net8.0/ref/service.CRM.Core.Domain.dll
 /home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Domain/obj/Debug/net8.0/service.CRM.Core.Domain.csproj.AssemblyReference.cache
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Domain/obj/Debug/net8.0/service.CRM.Core.Domain.sourcelink.json

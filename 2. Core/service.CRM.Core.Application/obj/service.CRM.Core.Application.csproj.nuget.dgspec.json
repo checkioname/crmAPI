@@ -28,6 +28,9 @@
             "projectReferences": {
               "/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Domain/service.CRM.Core.Domain.csproj": {
                 "projectPath": "/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Domain/service.CRM.Core.Domain.csproj"
+              },
+              "/home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/service.CRM.Driven.Adapter.Data.csproj": {
+                "projectPath": "/home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/service.CRM.Driven.Adapter.Data.csproj"
               }
             }
           }
@@ -42,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "DocX": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "DocumentFormat.OpenXml": {
               "target": "Package",
               "version": "[3.0.2, )"
@@ -104,6 +111,77 @@
             "MongoDB.Bson": {
               "target": "Package",
               "version": "[2.26.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/king/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/service.CRM.Driven.Adapter.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/service.CRM.Driven.Adapter.Data.csproj",
+        "projectName": "service.CRM.Driven.Adapter.Data",
+        "projectPath": "/home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/service.CRM.Driven.Adapter.Data.csproj",
+        "packagesPath": "/home/king/.nuget/packages/",
+        "outputPath": "/home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/king/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Domain/service.CRM.Core.Domain.csproj": {
+                "projectPath": "/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Domain/service.CRM.Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0-preview.5.24306.7, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[9.0.0-preview.5.24306.7, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.27.0, )"
             }
           },
           "imports": [

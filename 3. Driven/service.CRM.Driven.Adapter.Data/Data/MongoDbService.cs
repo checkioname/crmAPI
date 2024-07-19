@@ -12,11 +12,12 @@ public class MongoDbService
     {
         _configuration = configuration;
         var connectionString = _configuration.GetConnectionString("DbConnection");
+        Console.WriteLine(connectionString);
         var mongoUrl = MongoUrl.Create(connectionString);
         var mongoClient = new MongoClient(mongoUrl);
         _database = mongoClient.GetDatabase(mongoUrl.DatabaseName); 
     }
 
-    public IMongoDatabase? Databse => _database;
+    public IMongoDatabase? Database => _database;
 }
     

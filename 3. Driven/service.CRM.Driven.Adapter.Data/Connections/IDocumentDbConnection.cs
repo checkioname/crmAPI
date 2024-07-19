@@ -8,5 +8,5 @@ public interface IDocumentDbConnection
 {
     IMongoDatabase GetDefaultDatabase();
 
-    IMongoClient Client(DocumentDbConfiguration documentDbConfiguration, DocumentDbSecret documentDbSecret);
+    IMongoClient Client(DocumentDbConfiguration documentDbConfiguration);
 }

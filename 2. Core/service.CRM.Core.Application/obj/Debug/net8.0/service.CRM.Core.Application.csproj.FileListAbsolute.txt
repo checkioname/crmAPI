@@ -13,3 +13,7 @@
 /home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/obj/Debug/net8.0/refint/service.CRM.Core.Application.dll
 /home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/obj/Debug/net8.0/service.CRM.Core.Application.pdb
 /home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/obj/Debug/net8.0/ref/service.CRM.Core.Application.dll
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/obj/Debug/net8.0/service.CRM.Core.Application.sourcelink.json
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/bin/Debug/net8.0/service.CRM.Driven.Adapter.Data.dll
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Application/bin/Debug/net8.0/service.CRM.Driven.Adapter.Data.pdb

@@ -1,49 +1,28 @@
-using DocumentFormat.OpenXml.Packaging;
+using System.Text;
+using System.Text.RegularExpressions;
 using service.CRM.Core.Domain.Entities;
-using DocumentFormat.OpenXml.Wordprocessing;
+using Xceed.Document.NET;
+using Xceed.Words.NET;
 
-namespace service.CRM.Core.Application.DocumentosCliente;
-
-public class DocumentGenerator
+namespace service.CRM.Core.Application.DocumentosCliente
 {
-    public void SubstituirPlaceholders(string caminhoArquivo, Cliente cliente)
+    public class DocumentGenerator
     {
-        // Abrir o arquivo .docx
-        using (WordprocessingDocument doc = WordprocessingDocument.Open(caminhoArquivo, false))
+        static readonly Regex pattern = new Regex(@"\{{(\w+)\}}", RegexOptions.Compiled);
+
+        public void GerarDocumento(string caminhoTemplate, string caminhoNovoDocumento, Cliente cliente)
         {
-            File.Copy(caminhoArquivo, caminhoArquivo + "/" + cliente.Nome, true);
+            // Ler o conteúdo do template original
+            string docText;
 
-            using (WordprocessingDocument docNovo = WordprocessingDocument.Open(caminhoArquivo + "/" + cliente.Nome, true))
+            using (DocX document = DocX.Load(caminhoTemplate))
             {
-                var body = doc.MainDocumentPart.Document.Body;
-
-                // Obter todos os elementos de texto no corpo do documento
-                var textElements = body.Descendants<Text>();
-
-                foreach (var text in textElements)
-                {
-                    string texto = text.Text;
-                    if (texto.Contains("{{"))
-                    {
-                        // Substituir cada placeholder pelo valor correspondente do modelo Cliente
-                        texto = texto.Replace("{{Nome Completo}}", cliente.Nome)
-                            .Replace("{{CPF}}", cliente.Cpf)
-                            .Replace("{{RG}}", cliente.Rg)
-                            .Replace("{{Órgão Emissor}}", cliente.OrgaoEmissor)
-                            .Replace("{{Endereço}}", cliente.endereco.Rua)
-                            .Replace("{{Número}}", cliente.endereco.Numero.ToString())
-                            .Replace("{{Complemento}}", cliente.endereco.Complemento)
-                            .Replace("{{Bairro}}", cliente.endereco.Bairro)
-                            .Replace("{{Município}}", cliente.endereco.Municipio)
-                            .Replace("{{CEP}}", cliente.endereco.Cep)
-                            .Replace("{{Estado}}", cliente.endereco.Estado);
-                        // Aplicar o texto modificado de volta ao elemento Text
-                        text.Text = texto;
-                    }
-                }
-            docNovo.Save();
+                document.ReplaceText(new StringReplaceTextOptions() { SearchValue = "{{Nome Completo}}", NewValue= cliente.Nome });
+                document.ReplaceText(new StringReplaceTextOptions() { SearchValue = "{{CPF}}", NewValue= cliente.Cpf });
+                document.ReplaceText(new StringReplaceTextOptions() { SearchValue = "{{RG}}", NewValue= cliente.Rg });
+                
+                document.SaveAs(caminhoNovoDocumento);
             }
-
         }
     }
 }

@@ -104,6 +104,9 @@
             "projectReferences": {
               "/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Domain/service.CRM.Core.Domain.csproj": {
                 "projectPath": "/home/king/Documents/Personal Projects/AtibaiaIsencoes/2. Core/service.CRM.Core.Domain/service.CRM.Core.Domain.csproj"
+              },
+              "/home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/service.CRM.Driven.Adapter.Data.csproj": {
+                "projectPath": "/home/king/Documents/Personal Projects/AtibaiaIsencoes/3. Driven/service.CRM.Driven.Adapter.Data/service.CRM.Driven.Adapter.Data.csproj"
               }
             }
           }
@@ -118,6 +121,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "DocX": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "DocumentFormat.OpenXml": {
               "target": "Package",
               "version": "[3.0.2, )"

@@ -19,9 +19,9 @@ public class Cliente
     public string? OrgaoEmissor { get; set; }
     
     public Cnh? Cnh { get; set; }
-    public DateTime DataNascimento { get; set; }
-    public Servicos ServicoContratado { get; set; }
-    public Endereco endereco { get; set; }
+    public string DataNascimento { get; set; }
+    public Servicos? ServicoContratado { get; set; }
+    public Endereco? endereco { get; set; }
     public List<int> Celulares { get; set; }
     public string StatusPagamento { get; set; }
     public string LaudoEspecificar { get; set; }

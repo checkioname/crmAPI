@@ -19,6 +19,11 @@ public class ClienteRepository : IClienteRepository
         return clientes;
     }
 
+    public async Task createCliente(Cliente cliente)
+    {
+        await RecuperarCollection().InsertOneAsync(cliente);
+    }
+
     private IMongoCollection<Cliente> RecuperarCollection() => _documentDbConnection
         .GetDefaultDatabase()
         .GetCollection<Cliente>("Clientes");

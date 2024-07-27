@@ -1,49 +1,81 @@
-using Microsoft.Extensions.Options;
+using Microsoft.OpenApi.Models;
 using service.CRM.Driven.Adapter.Data;
+using service.CRM.Driven.Adapter.Data.Collections;
 using service.CRM.Driven.Adapter.Data.Config;
-using service.CRM.Driven.Adapter.Data.Data;
+using service.CRM.Driven.Adapter.Data.Connections;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configurações padrão do aplicativo
+builder.WebHost.ConfigureAppConfiguration((hostingContext, config) =>
+{
+    Console.WriteLine($"AMBIENTE: {hostingContext.HostingEnvironment.EnvironmentName}");
+    //config.AddConfigServer(hostingContext.HostingEnvironment);
+});
+
+
+var databaseConfigSection = builder.Configuration.GetSection("Database");
+Console.WriteLine("VALOR DA CONFIG SECTION - MONGO", databaseConfigSection);
+
+builder.Services.Configure<DocumentDbConfiguration>(databaseConfigSection);
+
+builder.Services.AddAdapterModule();
+builder.Services.AddHttpClient();
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<MongoDbService>();
+builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+builder.Services.AddSingleton<IDocumentDbConnection, DocumentDbConnection>();
 
-//Database dependencies
-builder.Services.AddAdapterModule();
+var documentDbSecretName = databaseConfigSection.Get<DocumentDbConfiguration>().ConnectionString;
 
-// Obter a seção de configuração do banco de dados
-var databaseConfigSection = builder.Configuration.GetSection("Database");
 
-// Configurar DocumentDbConfiguration usando IOptions
-builder.Services.Configure<DocumentDbConfiguration>(databaseConfigSection);
 
-// Configurar serviço Singleton com base nas configurações do DocumentDbConfiguration
-builder.Services.AddSingleton(provider =>
-    provider.GetRequiredService<IOptions<DocumentDbConfiguration>>().Value
-);
-//Console.WriteLine($"VALOR DAS CONFIGURAÇÕES DO BANCO: {provider.GetRequiredService<IOptions<DocumentDbConfiguration>>().Value}");
 
-// Construir o aplicativo
+
+
+// Adiciona serviços ao contêiner.
+// builder.Services.AddControllers();
+// builder.Services.AddEndpointsApiExplorer();
+
+
+//builder.Services.AddSingleton<MongoDbService>();
+
+
+// Configura o Swagger
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo 
+    { 
+        Title = "Minha API", 
+        Version = "v1",
+        Description = "Uma simples API de exemplo com .NET 8 e Swagger"
+    });
+
+    // Configurações adicionais do Swagger podem ser adicionadas aqui
+});
+
 var app = builder.Build();
 
-// Obter as configurações do banco de dados
-//var databaseSettings = app.Services.GetRequiredService<DocumentDbConfiguration>();
 
 
-// Configurações do Swagger (exemplo)
+// Configura o pipeline de requisição HTTP
 if (app.Environment.IsDevelopment())
 {
+    app.UseDeveloperExceptionPage();
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Minha API v1");
+        c.RoutePrefix = string.Empty; // Serve o Swagger na raiz do aplicativo
+    });
 }
 
-// Configurar pipeline HTTP
 app.UseHttpsRedirection();
+
+app.UseAuthorization();
+
 app.MapControllers();
 
-// Iniciar o aplicativo
 app.Run();

@@ -53,3 +53,5 @@ q
 A1. Driving/service.CRM.Driving.API/Properties/launchSettings.json,8/0/80b0272ec2991b5a2aa2954bfd4867e28398de65
 z
 J3. Driven/service.CRM.Driven.Adapter.Data/Repository/IClienteRepository.cs,d/c/dc8e8f8a25f439b1d943a6422333d1771e8b8653
+d
+42. Core/service.CRM.Core.Domain/Entities/Condutor.cs,5/5/556d41f1ca1817767160761ab01abba664e398a2
